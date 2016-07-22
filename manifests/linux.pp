@@ -5,7 +5,7 @@
 #
 class puppet_masterless::linux {
 
-  $site_path = "/etc/puppetlabs/code/environments/{$environment}/manifests/site.pp"
+  $site_path = "/etc/puppetlabs/code/environments/${environment}/manifests/site.pp"
 
   # use r10k to update environment/modules/hieradata
   cron { 'r10k_updater':
